@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 TONES = [
-    'Happy',
+    'Joy',
     'Confident',
     'Tentative',
     'Analytical',
@@ -21,7 +21,7 @@ def reindex_tones(df):
     return df
 
 if __name__ == '__main__':
-    INPUT_CSV = 'comments.csv'
+    INPUT_CSV = 'SentimenteOutput.csv'
 
     df = pd.read_csv(INPUT_CSV)
 

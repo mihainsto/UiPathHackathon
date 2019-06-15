@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CommentSequence" this:CommentSequence.in_APIkey="AIzaSyBj9XRLllqvtkWBgkp1A31YFvvylGEfgak" this:CommentSequence.in_VideoURL="https://www.youtube.com/watch?v=WM8bTdBs-cw" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:t="clr-namespace:Translator;assembly=Translator" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:ui1="clr-namespace:UiPath.IBMWatsonEmpathy;assembly=UiPath.IBMWatsonEmpathy" xmlns:uia="clr-namespace:UiPath.IBMWatsonEmpathy.Activities;assembly=UiPath.IBMWatsonEmpathy.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CommentSequence" this:CommentSequence.in_APIkey="AIzaSyBj9XRLllqvtkWBgkp1A31YFvvylGEfgak" this:CommentSequence.in_VideoURL="https://www.youtube.com/watch?v=WM8bTdBs-cw" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:t="clr-namespace:Translator;assembly=Translator" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:ui1="clr-namespace:UiPath.IBMWatsonEmpathy;assembly=UiPath.IBMWatsonEmpathy" xmlns:uia="clr-namespace:UiPath.IBMWatsonEmpathy.Activities;assembly=UiPath.IBMWatsonEmpathy.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_SearchString" Type="InArgument(x:String)" />
     <x:Property Name="in_APIkey" Type="InArgument(x:String)" />
@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>564,3234</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>684.8,5880</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CommentSequence_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -67,7 +67,7 @@
       <AssemblyReference>UiPath.IBMWatsonEmpathy</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Random Comment" sap:VirtualizedContainerService.HintSize="524,3154" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence DisplayName="Random Comment" sap:VirtualizedContainerService.HintSize="644.8,5760" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="HttpResult" />
       <Variable x:TypeArguments="x:String" Name="nextPageToken" />
@@ -81,7 +81,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If sap2010:Annotation.AnnotationText="Check for mandatory Data" Condition="[in_VideoURL = &quot;&quot; or in_APIkey = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="502,423" sap2010:WorkflowViewState.IdRef="If_1">
+    <If sap2010:Annotation.AnnotationText="Check for mandatory Data" Condition="[in_VideoURL = &quot;&quot; or in_APIkey = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="622.4,424.8" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -90,18 +90,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence sap:VirtualizedContainerService.HintSize="336,245" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence sap:VirtualizedContainerService.HintSize="336.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Hey, Video url and API key are mandatory&quot;]" TopMost="True" />
-          <Throw Exception="[new Exception(&quot;Please Check for Input Arguments&quot;)]" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Hey, Video url and API key are mandatory&quot;]" TopMost="True" />
+          <Throw Exception="[new Exception(&quot;Please Check for Input Arguments&quot;)]" sap:VirtualizedContainerService.HintSize="314.4,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
         </Sequence>
       </If.Then>
     </If>
-    <TryCatch sap2010:Annotation.AnnotationText="Converting video URL to ID" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="502,80" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="Converting video URL to ID" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="622.4,80.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -152,7 +152,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <Assign sap2010:Annotation.AnnotationText="Reset Next Page token" DisplayName="Assign" sap:VirtualizedContainerService.HintSize="502,88" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap2010:Annotation.AnnotationText="Reset Next Page token" DisplayName="Assign" sap:VirtualizedContainerService.HintSize="622.4,88" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[nextPageToken]</OutArgument>
       </Assign.To>
@@ -167,7 +167,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:BuildDataTable sap2010:Annotation.AnnotationText="DataTable to Store Comments" DataTable="[ResultDataTable]" DisplayName="Build data table" sap:VirtualizedContainerService.HintSize="502,96" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;AuthorName&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Comment&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="DataTable to Store Comments" DataTable="[ResultDataTable]" DisplayName="Build data table" sap:VirtualizedContainerService.HintSize="622.4,96.8" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;AuthorName&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Comment&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -176,17 +176,17 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <Sequence sap:VirtualizedContainerService.HintSize="502,52" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence sap:VirtualizedContainerService.HintSize="622.4,1573.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="StatusCode" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" sap2010:Annotation.AnnotationText="API request for fetching comments" BodyFormat="application/xml" DisplayName="HTTP Request" EndPoint="[&quot;https://www.googleapis.com/youtube/v3/commentThreads?key=&quot;+in_APIkey+&quot;&amp;textFormat=plainText&amp;part=snippet&amp;videoId=&quot;+VideoID+&quot;&amp;maxResults=100&amp;pageToken=&quot;+nextPageToken]" sap:VirtualizedContainerService.HintSize="464,66.4" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[HttpResult]" StatusCode="[StatusCode]" TimeoutMS="6000">
+      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" sap2010:Annotation.AnnotationText="API request for fetching comments" BodyFormat="application/xml" DisplayName="HTTP Request" EndPoint="[&quot;https://www.googleapis.com/youtube/v3/commentThreads?key=&quot;+in_APIkey+&quot;&amp;textFormat=plainText&amp;part=snippet&amp;videoId=&quot;+VideoID+&quot;&amp;maxResults=5&amp;pageToken=&quot;+nextPageToken]" sap:VirtualizedContainerService.HintSize="464,66.4" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[HttpResult]" StatusCode="[StatusCode]" TimeoutMS="6000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -320,37 +320,17 @@
         </If.Else>
       </If>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="502,421" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,343" sap2010:WorkflowViewState.IdRef="Sequence_13">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <While DisplayName="While - extract comments from each page in response API" sap:VirtualizedContainerService.HintSize="464,219" sap2010:WorkflowViewState.IdRef="While_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <While.Condition>[nextPageToken &lt;&gt; "empty"]</While.Condition>
-          </While>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <WriteLine sap2010:Annotation.AnnotationText="Total Number of comments" DisplayName="Write line" sap:VirtualizedContainerService.HintSize="502,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;Total Comments: &quot;+ResultDataTable.Rows.Count.ToString]">
+    <WriteLine sap2010:Annotation.AnnotationText="Total Number of comments" DisplayName="Write line" sap:VirtualizedContainerService.HintSize="622.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;Total Comments: &quot;+ResultDataTable.Rows.Count.ToString]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </WriteLine>
-    <If sap2010:Annotation.AnnotationText="Filter comments if SearchString is provided" Condition="[in_SearchString &lt;&gt; &quot;&quot;]" DisplayName="If" sap:VirtualizedContainerService.HintSize="502,96" sap2010:WorkflowViewState.IdRef="If_4">
+    <If sap2010:Annotation.AnnotationText="Filter comments if SearchString is provided" Condition="[in_SearchString &lt;&gt; &quot;&quot;]" DisplayName="If" sap:VirtualizedContainerService.HintSize="622.4,237.6" sap2010:WorkflowViewState.IdRef="If_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
@@ -393,25 +373,25 @@
         </ui:FilterDataTable>
       </If.Then>
     </If>
-    <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="502,52" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="622.4,909.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="Selection" />
         <Variable x:TypeArguments="x:String" Name="testDT" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <WriteLine sap2010:Annotation.AnnotationText="Filtered comment count" DisplayName="Write line" sap:VirtualizedContainerService.HintSize="598.5,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;Filtered Comments: &quot;+ResultDataTable.Rows.Count.ToString]">
+      <WriteLine sap2010:Annotation.AnnotationText="Filtered comment count" DisplayName="Write line" sap:VirtualizedContainerService.HintSize="600,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;Filtered Comments: &quot;+ResultDataTable.Rows.Count.ToString]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </WriteLine>
-      <If Condition="[ResultDataTable.Rows.count &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="598.5,654" sap2010:WorkflowViewState.IdRef="If_5">
+      <If Condition="[ResultDataTable.Rows.count &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="600,654.4" sap2010:WorkflowViewState.IdRef="If_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -419,7 +399,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence sap2010:Annotation.AnnotationText="Selecting Random comment from filtered comment" sap:VirtualizedContainerService.HintSize="308.5,504" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence sap2010:Annotation.AnnotationText="Selecting Random comment from filtered comment" sap:VirtualizedContainerService.HintSize="309.6,504.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -427,7 +407,7 @@
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ResultDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="286.5,336" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ResultDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="287.2,336" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
@@ -447,13 +427,13 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="265,386" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence sap:VirtualizedContainerService.HintSize="265.6,387.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="243,62" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="No comments found in filteration" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="243.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="No comments found in filteration" />
             <Assign sap:VirtualizedContainerService.HintSize="243.2,60" sap2010:WorkflowViewState.IdRef="Assign_10">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[out_Name]</OutArgument>
@@ -478,7 +458,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence sap:VirtualizedContainerService.HintSize="502,1272" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <Sequence sap:VirtualizedContainerService.HintSize="622.4,1813.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="Tabel" />
         <Variable x:TypeArguments="sd:DataTable" Name="SentimentTable" />
@@ -488,15 +468,22 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BuildDataTable DataTable="[Tabel]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="366,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;AuthorName&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Comment&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;AuthorName&gt;Ionel&lt;/AuthorName&gt;&#xA;    &lt;Comment&gt;This video is amazing!&lt;/Comment&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;AuthorName&gt;Mihaita&lt;/AuthorName&gt;&#xA;    &lt;Comment&gt;I am happy.&lt;/Comment&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;AuthorName&gt;B&lt;/AuthorName&gt;&#xA;    &lt;Comment&gt;Am probleme cu formatul&lt;/Comment&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;AuthorName&gt;C&lt;/AuthorName&gt;&#xA;    &lt;Comment&gt;Open package manager or.&lt;/Comment&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <ui:BuildDataTable DataTable="[SentimentTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="366,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Tone&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Confidence&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[Tabel]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="366,950" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <Assign sap:VirtualizedContainerService.HintSize="516.8,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sd:DataTable">[Tabel]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sd:DataTable">[ResultDataTable]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:BuildDataTable DataTable="[SentimentTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="516.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Tone&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Confidence&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[Tabel]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="516.8,1099.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="336,801" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486.4,950.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="limba" />
                 <Variable x:TypeArguments="x:String" Name="translatedText" />
@@ -508,32 +495,60 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <t:Translate sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="Translate_1" Result="[translatedText]" SourceLanguage="ro" TargetLanguage="en" Text="[row(1).ToString()]" />
-              <uia:AnalyzeGeneralTone SentenceTones="{x:Null}" APIKey="87NatcnfO_VPU5FHJx41o6scBIcHpmZizgFQj9RNBO93" DisplayName="Analyze General Tone" DocumentTone="[tone]" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="AnalyzeGeneralTone_1" InLanguage="English" OutLanguage="English" Text="[translatedText]" URL="https://gateway-lon.watsonplatform.net/tone-analyzer/api" />
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="314,62" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[tone.Confidence.ToString()]" />
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="314,62" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[tone.ToneName]" />
-              <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_12">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[rowArray(0)]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[tone.ToneName.ToString()]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_13">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[rowArray(1)]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[tone.Confidence.ToString()]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[rowArray]" DataTable="[SentimentTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-              <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[SentimentTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="SentimenteOutput.csv" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+              <t:Translate sap:VirtualizedContainerService.HintSize="464,22.4" sap2010:WorkflowViewState.IdRef="Translate_1" Result="[translatedText]" SourceLanguage="ro" TargetLanguage="en" Text="[row(1).ToString()]" />
+              <uia:AnalyzeGeneralTone SentenceTones="{x:Null}" APIKey="87NatcnfO_VPU5FHJx41o6scBIcHpmZizgFQj9RNBO93" DisplayName="Analyze General Tone" DocumentTone="[tone]" sap:VirtualizedContainerService.HintSize="464,21.6" sap2010:WorkflowViewState.IdRef="AnalyzeGeneralTone_1" InLanguage="English" OutLanguage="English" Text="[translatedText]" URL="https://gateway-lon.watsonplatform.net/tone-analyzer/api" />
+              <If Condition="[Not (tone Is Nothing)]" sap:VirtualizedContainerService.HintSize="464,701.6" sap2010:WorkflowViewState.IdRef="If_6">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="265.6,552" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="243.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[tone.Confidence.ToString()]" />
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="243.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[tone.ToneName]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="243.2,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[rowArray(0)]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[tone.ToneName.ToString()]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="243.2,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[rowArray(1)]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[tone.Confidence.ToString()]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[rowArray]" DataTable="[SentimentTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="243.2,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                  </Sequence>
+                </If.Then>
+              </If>
             </Sequence>
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
+      <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[SentimentTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="SentimenteOutput.csv" sap:VirtualizedContainerService.HintSize="516.8,88" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+      <p:PythonScope DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="516.8,221.6" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="C:/Users/Bogdan/AppData/Local/Programs/Python/Python36-32/">
+        <p:PythonScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336.8,184.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <p:RunScript Code="{x:Null}" DisplayName="Run Python Script" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="RunScript_1" ScriptFile="stats.py" />
+            </Sequence>
+          </ActivityAction>
+        </p:PythonScope.Body>
+      </p:PythonScope>
     </Sequence>
   </Sequence>
 </Activity>
