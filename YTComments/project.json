@@ -3,10 +3,12 @@
   "description": "Picking random comment from Youtube video",
   "main": "YTRandomComment.xaml",
   "dependencies": {
-    "UiPath.UIAutomation.Activities": "[18.3.6897.22543]",
-    "UiPath.System.Activities": "[18.3.6897.22524]",
+    "LanguageTranslator": "[1.0.6]",
     "UiPath.Excel.Activities": "[2.4.6884.25683]",
+    "UiPath.IBMWatsonEmpathy.Activities": "[0.2.0]",
     "UiPath.Mail.Activities": "[1.2.6863.29868]",
+    "UiPath.System.Activities": "[18.3.6897.22524]",
+    "UiPath.UIAutomation.Activities": "[18.3.6897.22543]",
     "UiPath.WebAPI.Activities": "[1.4.0]"
   },
   "schemaVersion": "3.2",
@@ -14,6 +16,7 @@
   "projectVersion": "1.0.0.0",
   "runtimeOptions": {
     "autoDispose": false,
+    "isPausable": true,
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -23,5 +26,6 @@
   "libraryOptions": {
     "includeOriginalXaml": false,
     "privateWorkflows": []
-  }
+  },
+  "webServices": []
 }
