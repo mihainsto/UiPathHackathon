@@ -2,4 +2,4 @@
 
 This repo contains the code for our team's entry in the 2019 UiPath RPA hackathon.  
 
-[Project Overview(https://connect.uipath.com/community/project/probothelper#)
+[Project Overview](https://connect.uipath.com/community/project/probothelper#)
